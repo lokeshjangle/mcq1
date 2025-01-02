@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python MCQs</title>
+   <style>body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f8f9fa;
+}
+
+.question p {
+    font-weight: bold;
+    color: #495057;
+}
+
+.options {
+    margin-left: 20px;
+}
+
+.options label {
+    display: block;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.options input[type="radio"] {
+    margin-right: 10px;
+}
+
+.options label:hover {
+    background-color: #e2e6ea;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    color: #28a745;
+     }</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Python MCQs</h1>
+        <form id="mcqForm">
+            <div class="question">
+                <p>1. What is the correct file extension for Python files?</p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="A"> A) .pyth</label><br>
+                    <label><input type="radio" name="q1" value="B"> B) .pt</label><br>
+                    <label><input type="radio" name="q1" value="C"> C) .py</label><br>
+                    <label><input type="radio" name="q1" value="D"> D) .python</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>2. Which of the following is a valid variable name in Python?</p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="A"> A) 1variable</label><br>
+                    <label><input type="radio" name="q2" value="B"> B) variable-name</label><br>
+                    <label><input type="radio" name="q2" value="C"> C) variable_name</label><br>
+                    <label><input type="radio" name="q2" value="D"> D) variable name</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>3. Which of the following is used to define a block of code in Python?</p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="A"> A) Indentation</label><br>
+                    <label><input type="radio" name="q3" value="B"> B) Curly braces</label><br>
+                    <label><input type="radio" name="q3" value="C"> C) Parentheses</label><br>
+                    <label><input type="radio" name="q3" value="D"> D) Square brackets</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>4. What is the output of <code>print(type(5))</code>?</p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="A"> A) &lt;class 'int'&gt;</label><br>
+                    <label><input type="radio" name="q4" value="B"> B) &lt;type 'int'&gt;</label><br>
+                    <label><input type="radio" name="q4" value="C"> C) int</label><br>
+                    <label><input type="radio" name="q4" value="D"> D) 5</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>5. Which of the following is not a built-in data type in Python?</p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="A"> A) List</label><br>
+                    <label><input type="radio" name="q5" value="B ```html
+"> B) Tuple</label><br>
+                    <label><input type="radio" name="q5" value="C"> C) Dictionary</label><br>
+                    <label><input type="radio" name="q5" value="D"> D) Array</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>6. What will be the output of the following code?</p>
+                <pre><code>def func(x):
+    return x + 1
+print(func(func(1)))</code></pre>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="A"> A) 1</label><br>
+                    <label><input type="radio" name="q6" value="B"> B) 2</label><br>
+                    <label><input type="radio" name="q6" value="C"> C) 3</label><br>
+                    <label><input type="radio" name="q6" value="D"> D) Error</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>7. What will be the output of the following code?</p>
+                <pre><code>a = [1, 2, 3]
+b = a
+b.append(4)
+print(a)</code></pre>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="A"> A) [1, 2, 3]</label><br>
+                    <label><input type="radio" name="q7" value="B"> B) [1, 2, 3, 4]</label><br>
+                    <label><input type="radio" name="q7" value="C"> C) [4]</label><br>
+                    <label><input type="radio" name="q7" value="D"> D) Error</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>8. Which of the following is used to create a list in Python?</p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="A"> A) []</label><br>
+                    <label><input type="radio" name="q8" value="B"> B) ()</label><br>
+                    <label><input type="radio" name="q8" value="C"> C) {} </label><br>
+                    <label><input type="radio" name="q8" value="D"> D) ||</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>9. What is the output of <code>print(2 ** 3)</code>?</p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="A"> A) 6</label><br>
+                    <label><input type="radio" name="q9" value="B"> B) 8</label><br>
+                    <label><input type="radio" name="q9" value="C"> C) 9</label><br>
+                    <label><input type="radio" name="q9" value="D"> D) 3</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>10. Which of the following is a mutable data type in Python?</p>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="A"> A) Tuple</label><br>
+                    <label><input type="radio" name="q10" value="B"> B) String</label><br>
+                    <label><input type="radio" name="q10" value="C"> C) List</label><br>
+                    <label><input type="radio" name="q10" value="D"> D) Integer</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>11. What is the output of <code>print("Hello" + "World")</code>?</p>
+                <div class="options">
+                    <label><input type="radio" name="q11" value="A"> A) Hello World</label><br>
+                    <label><input type="radio" name="q11" value="B"> B) HelloWorld</label><br>
+                    <label><input type="radio" name="q11" value="C"> C) Error</label><br>
+ ```html
+                    <label><input type="radio" name="q11" value="D"> D) Hello World!</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>12. Which of the following is a Python tuple?</p>
+                <div class="options">
+                    <label><input type="radio" name="q12" value="A"> A) (1, 2, 3)</label><br>
+                    <label><input type="radio" name="q12" value="B"> B) [1, 2, 3]</label><br>
+                    <label><input type="radio" name="q12" value="C"> C) {1, 2, 3}</label><br>
+                    <label><input type="radio" name="q12" value="D"> D) 1, 2, 3</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>13. What is the output of <code>print(len("Hello"))</code>?</p>
+                <div class="options">
+                    <label><input type="radio" name="q13" value="A"> A) 4</label><br>
+                    <label><input type="radio" name="q13" value="B"> B) 5</label><br>
+                    <label><input type="radio" name="q13" value="C"> C) 6</label><br>
+                    <label><input type="radio" name="q13" value="D"> D) Error</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>14. Which of the following is used to handle exceptions in Python?</p>
+                <div class="options">
+                    <label><input type="radio" name="q14" value="A"> A) try</label><br>
+                    <label><input type="radio" name="q14" value="B"> B) catch</label><br>
+                    <label><input type="radio" name="q14" value="C"> C) except</label><br>
+                    <label><input type="radio" name="q14" value="D"> D) all of the above</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>15. What is the output of <code>print(1 == True)</code>?</p>
+                <div class="options">
+                    <label><input type="radio" name="q15" value="A"> A) True</label><br>
+                    <label><input type="radio" name="q15" value="B"> B) False</label><br>
+                    <label><input type="radio" name="q15" value="C"> C) 1</label><br>
+                    <label><input type="radio" name="q15" value="D"> D) Error</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>16. Which of the following is not a keyword in Python?</p>
+                <div class="options">
+                    <label><input type="radio" name="q16" value="A"> A) def</label><br>
+                    <label><input type="radio" name="q16" value="B"> B) return</label><br>
+                    <label><input type="radio" name="q16" value="C"> C) lambda</label><br>
+                    <label><input type="radio" name="q16" value="D"> D) function</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>17. What is the output of <code>print("Python"[0])</code>?</p>
+                <div class="options">
+                    <label><input type="radio" name="q17" value="A"> A) P</label><br>
+                    <label><input type="radio" name="q17" value="B"> B) y</label><br>
+                    <label><input type="radio" name="q17" value="C"> C) Error</label><br>
+                    <label><input type="radio" name="q17" value="D"> D) python</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>18. Which of the following is used to create a dictionary in Python?</p>
+                <div class="options">
+                    <label><input type="radio" name="q18" value="A"> A) []</label><br>
+                    <label><input type="radio" name="q18" value="B"> B) ()</label><br>
+                    <label><input type="radio" name="q18" value="C"> C) {}</label><br>
+                    <label><input type="radio" name="q18" value="D"> D) ||</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>19. What is the output of <code>print("Hello".upper())</code>?</p>
+                <div class="options">
+                    <label><input type="radio" name="q19" value="A"> A) hello</label><br>
+                    <label><input type="radio" name="q19" value="B"> B) Hello</label><br>
+                    <label><input type="radio" name="q19" value="C"> C) HELLO</label><br>
+                    <label><input type="radio" name="q19" value="D"> D) Error</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>20. Which of the following is a built-in function in Python?</p>
+                <div class="options">
+                    <label><input type="radio" name="q20" value="A"> A) print()</label><br>
+                    <label><input type="radio" name="q20" value="B"> B) input()</label><br>
+                    <label><input type="radio" name="q20" value="C"> C) len()</label><br>
+                    <label><input type="radio" name="q20" value="D"> D) All of the above</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>21. What is the output of <code>print(3 // 2)</code>?</p>
+                <div class="options">
+                    <label><input type="radio" name="q21" value="A"> A) 1.5</label><br>
+                    <label><input type="radio" name="q21" value="B"> B) 1</label><br>
+                    <label><input type="radio" name="q21" value="C"> C) 2</label><br>
+                    <label><input type="radio" name="q21" value="D"> D) Error</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>22. Which of the following is used to comment in Python?</p>
+                <div class="options">
+                    <label><input type="radio" name="q22" value="A"> A) //</label><br>
+                    <label><input type="radio" name="q22" value="B"> B) #</label><br>
+                    <label><input type="radio" name="q22" value="C"> C) /* */</label><br>
+                    <label><input type="radio" name="q22" value="D"> D) <!-- --> </label>
+                </div>
+            </div>
+            <div class="question">
+                <p>23. What is the output of <code>print(type([]))</code>?</p>
+                <div class="options">
+                    <label><input type="radio" name="q23" value="A"> A) list</label><br>
+                    <label><input type="radio" name="q23" value="B"> B) <class 'list'></label><br>
+                    <label><input type="radio" name="q23" value="C"> C) Error</label><br>
+                    <label><input type="radio" name="q23" value="D"> D) <type 'list'></label>
+                </div>
+            </div>
+            <div class="question">
+                <p>24. Which of the following is a correct way to create a function in Python?</p>
+                <div class="options">
+                    <label><input type="radio" name="q24" value="A"> A) function myFunc():</label><br>
+                    <label><input type="radio" name="q24" value="B"> B) def myFunc[]:</label><br>
+                    <label><input type="radio" name="q24" value="C"> C) def myFunc():</label><br>
+                    <label><input type="radio" name="q24" value="D"> D) create myFunc():</label>
+                </div>
+            ```html
+            </div>
+            <div class="question">
+                <p>25. What is the output of <code>print("abc" * 3)</code>?</p>
+                <div class="options">
+                    <label><input type="radio" name="q25" value="A"> A) abcabcabc</label><br>
+                    <label><input type="radio" name="q25" value="B"> B) abcabc</label><br>
+                    <label><input type="radio" name="q25" value="C"> C) Error</label><br>
+                    <label><input type="radio" name="q25" value="D"> D) 3abc</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>26. Which of the following is used to read a file in Python?</p>
+                <div class="options">
+                    <label><input type="radio" name="q26" value="A"> A) read()</label><br>
+                    <label><input type="radio" name="q26" value="B"> B) open()</label><br>
+                    <label><input type="radio" name="q26" value="C"> C) get()</label><br>
+                    <label><input type="radio" name="q26" value="D"> D) fetch()</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>27. What is the output of <code>print("Hello"[1])</code>?</p>
+                <div class="options">
+                    <label><input type="radio" name="q27" value="A"> A) H</label><br>
+                    <label><input type="radio" name="q27" value="B"> B) e</label><br>
+                    <label><input type="radio" name="q27" value="C"> C) l</label><br>
+                    <label><input type="radio" name="q27" value="D"> D) o</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>28. Which of the following is a correct way to import a module in Python?</p>
+                <div class="options">
+                    <label><input type="radio" name="q28" value="A"> A) import module_name</label><br>
+                    <label><input type="radio" name="q28" value="B"> B) include module_name</label><br>
+                    <label><input type="radio" name="q28" value="C"> C) require module_name</label><br>
+                    <label><input type="radio" name="q28" value="D"> D) load module_name</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>29. What is the output of <code>print(0.1 + 0.2 == 0.3)</code>?</p>
+                <div class="options">
+                    <label><input type="radio" name="q29" value="A"> A) True</label><br>
+                    <label><input type="radio" name="q29" value="B"> B) False</label><br>
+                    <label><input type="radio" name="q29" value="C"> C) Error</label><br>
+                    <label><input type="radio" name="q29" value="D"> D) None</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>30. Which of the following is used to create a set in Python?</p>
+                <div class="options">
+                    <label><input type="radio" name="q30" value="A"> A) []</label><br>
+                    <label><input type="radio" name="q30" value="B"> B) ()</label><br>
+                    <label><input type="radio" name="q30" value="C"> C) {}</label><br>
+                    <label><input type="radio" name="q30" value="D"> D) ||</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>31. What is the output of <code>print("Python"[-1])</code>?</p>
+                <div class="options">
+                    <label><input type="radio" name="q31" value="A"> A) P</label><br>
+                    <label><input type="radio" name="q31" value=" ```html
+A) n</label><br>
+                    <label><input type="radio" name="q31" value="B"> B) o</label><br>
+                    <label><input type="radio" name="q31" value="C"> C) Error</label><br>
+                    <label><input type="radio" name="q31" value="D"> D) Python</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>32. Which of the following is a correct way to define a class in Python?</p>
+                <div class="options">
+                    <label><input type="radio" name="q32" value="A"> A) class MyClass:</label><br>
+                    <label><input type="radio" name="q32" value="B"> B) MyClass class:</label><br>
+                    <label><input type="radio" name="q32" value="C"> C) define MyClass:</label><br>
+                    <label><input type="radio" name="q32" value="D"> D) class: MyClass</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>33. What is the output of <code>print("abc".find("b"))</code>?</p>
+                <div class="options">
+                    <label><input type="radio" name="q33" value="A"> A) 1</label><br>
+                    <label><input type="radio" name="q33" value="B"> B) 0</label><br>
+                    <label><input type="radio" name="q33" value="C"> C) 2</label><br>
+                    <label><input type="radio" name="q33" value="D"> D) -1</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>34. Which of the following is used to create a virtual environment in Python?</p>
+                <div class="options">
+                    <label><input type="radio" name="q34" value="A"> A) venv</label><br>
+                    <label><input type="radio" name="q34" value="B"> B) virtualenv</label><br>
+                    <label><input type="radio" name="q34" value="C"> C) pipenv</label><br>
+                    <label><input type="radio" name="q34" value="D"> D) All of the above</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>35. What is the output of <code>print("Hello".replace("H", "J"))</code>?</p>
+                <div class="options">
+                    <label><input type="radio" name="q35" value="A"> A) Hello</label><br>
+                    <label><input type="radio" name="q35" value="B"> B) Jello</label><br>
+                    <label><input type="radio" name="q35" value="C"> C) Error</label><br>
+                    <label><input type="radio" name="q35" value="D"> D) Jello!</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>36. Which of the following is a correct way to create a string in Python?</p>
+                <div class="options">
+                    <label><input type="radio" name="q36" value="A"> A) "Hello"</label><br>
+                    <label><input type="radio" name="q36" value="B"> B) 'Hello'</label><br>
+                    <label><input type="radio" name="q36" value="C"> C) """Hello"""</label><br>
+                    <label><input type="radio" name="q36" value="D"> D) All of the above</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>37. What is the output of <code>print(5 % 2)</code>?</p>
+                <div class="options">
+                    <label><input type="radio" name="q37" value="A"> A) 1</label><br>
+                    <label><input type="radio" name="q37" value="B"> B) 2</label><br>
+                    <label><input type="radio" name="q37" value="C"> C) 0</label><br>
+                    <label><input type="radio" ```html
+name="q37" value="D"> D) Error</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>38. Which of the following is used to convert a string to an integer in Python?</p>
+                <div class="options">
+                    <label><input type="radio" name="q38" value="A"> A) int()</label><br>
+                    <label><input type="radio" name="q38" value="B"> B) str()</label><br>
+                    <label><input type="radio" name="q38" value="C"> C) float()</label><br>
+                    <label><input type="radio" name="q38" value="D"> D) convert()</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>39. What is the output of <code>print("abc".upper())</code>?</p>
+                <div class="options">
+                    <label><input type="radio" name="q39" value="A"> A) ABC</label><br>
+                    <label><input type="radio" name="q39" value="B"> B) Abc</label><br>
+                    <label><input type="radio" name="q39" value="C"> C) Error</label><br>
+                    <label><input type="radio" name="q39" value="D"> D) abc</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>40. Which of the following is a correct way to check if a variable <code>x</code> is equal to 10?</p>
+                <div class="options">
+                    <label><input type="radio" name="q40" value="A"> A) if x = 10:</label><br>
+                    <label><input type="radio" name="q40" value="B"> B) if x == 10:</label><br>
+                    <label><input type="radio" name="q40" value="C"> C) if x != 10:</label><br>
+                    <label><input type="radio" name="q40" value="D"> D) if x < 10:</label>
+                </div>
+            </div>
+            <button type="button" onclick="calculateScore()">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script>
+        function calculateScore() {
+            const answers = {
+                q1: 'C',
+                q2: 'C',
+                q3: 'A',
+                q4: 'A',
+                q5: 'D',
+                q6: 'C',
+                q7: 'B',
+                q8: 'A',
+                q9: 'B',
+                q10: 'C',
+                q11: 'B',
+                q12: 'A',
+                q13: 'B',
+                q14: 'D',
+                q15: 'A',
+                q16: 'D',
+                q17: 'A',
+                q18: 'C',
+                q19: 'C',
+                q20: 'D',
+                q21: 'B',
+                q22: 'B',
+                q23: 'B',
+                q24: 'C',
+                q25: 'A',
+                q26: 'B',
+                q27: 'B',
+                q28: 'A',
+                q29: 'B',
+                q30: 'C',
+                q31: 'A',
+                q32: 'A',
+                q33: 'A',
+                q34: 'D',
+                q35: 'B',
+                q36: 'D',
+                q37: 'A',
+                q38: 'A',
+                q39: 'A',
+                q40: 'B'
+            };
+            let score = 0;
+            const form = document.getElementById('mcqForm');
+            for (let question in answers) {
+                const userAnswer = form[question].value;
+                if (userAnswer === answers[question]) {
+                    score++;
+                }
+            }
+            document.getElementById('result').innerText = `Your score is ${score} out of ${Object.keys(answers).length}`;
+        }
+    </script>
+</body>
+</html>
