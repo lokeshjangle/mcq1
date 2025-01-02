@@ -4,89 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python MCQs</title>
-   <style>body {
-    font-family: 'Arial', sans-serif;
-    background-color: #e9ecef;
-    margin: 0;
-    padding: 20px;
-}
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 20px;
+        }
 
-.container {
-    max-width: 800px;
-    margin: auto;
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
 
-h1 {
-    text-align: center;
-    color: #343a40;
-    margin-bottom: 20px;
-}
+        h1 {
+            text-align: center;
+            color: #343a40;
+            margin-bottom: 20px;
+        }
 
-.question {
-    margin-bottom: 20px;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-    padding: 15px;
-    background-color: #f8f9fa;
-}
+        .question {
+            margin-bottom: 20px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #f8f9fa;
+        }
 
-.question p {
-    font-weight: bold;
-    color: #495057;
-}
+        .question p {
+            font-weight: bold;
+            color: #495057;
+        }
 
-.options {
-    margin-left: 20px;
-}
+        .options {
+            margin-left: 20px;
+        }
 
-.options label {
-    display: block;
-    margin: 5px 0;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
+        .options label {
+            display: block;
+            margin: 5px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
 
-.options input[type="radio"] {
-    margin-right: 10px;
-}
+        .options input[type="radio"] {
+            margin-right: 10px;
+        }
 
-.options label:hover {
-    background-color: #e2e6ea;
-    border-radius: 5px;
-}
+        .options label:hover {
+            background-color: #e2e6ea;
+            border-radius: 5px;
+        }
 
-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
 
-button:hover {
-    background-color: #0056b3;
-}
+        button:hover {
+            background-color: #0056b3;
+        }
 
-#result {
-    margin-top: 20px;
-    font-weight: bold;
-    text-align: center;
-    font-size: 18px;
-    color: #28a745;
-     }</style>
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 18px;
+            color: #28a745;
+        }
+
+        #timer {
+            text-align: center;
+            font-size: 20px;
+            color: #dc3545;
+            margin-bottom: 20px;
+        }
+
+        /* Popup styles */
+        .popup {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .popup button {
+            margin-top: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .popup button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>Python MCQs</h1>
+        <div id="timer">Time Remaining: <span id="time">40:00</span></div>
         <form id="mcqForm">
             <div class="question">
                 <p>1. What is the correct file extension for Python files?</p>
@@ -128,8 +173,7 @@ button:hover {
                 <p>5. Which of the following is not a built-in data type in Python?</p>
                 <div class="options">
                     <label><input type="radio" name="q5" value="A"> A) List</label><br>
-                    <label><input type="radio" name="q5" value="B ```html
-"> B) Tuple</label><br>
+                    <label><input type="radio" name="q5" value="B"> B) Tuple</label><br>
                     <label><input type="radio" name="q5" value="C"> C) Dictionary</label><br>
                     <label><input type="radio" name="q5" value="D"> D) Array</label>
                 </div>
@@ -162,7 +206,7 @@ print(a)</code></pre>
             <div class="question">
                 <p>8. Which of the following is used to create a list in Python?</p>
                 <div class="options">
-                    <label><input type="radio" name="q8" value="A"> A) []</label><br>
+                    <label><input type="radio" name="q8" value="A"> A) []</label><br ```html
                     <label><input type="radio" name="q8" value="B"> B) ()</label><br>
                     <label><input type="radio" name="q8" value="C"> C) {} </label><br>
                     <label><input type="radio" name="q8" value="D"> D) ||</label>
@@ -192,7 +236,6 @@ print(a)</code></pre>
                     <label><input type="radio" name="q11" value="A"> A) Hello World</label><br>
                     <label><input type="radio" name="q11" value="B"> B) HelloWorld</label><br>
                     <label><input type="radio" name="q11" value="C"> C) Error</label><br>
- ```html
                     <label><input type="radio" name="q11" value="D"> D) Hello World!</label>
                 </div>
             </div>
@@ -221,6 +264,7 @@ print(a)</code></pre>
                     <label><input type="radio" name="q14" value="B"> B) catch</label><br>
                     <label><input type="radio" name="q14" value="C"> C) except</label><br>
                     <label><input type="radio" name="q14" value="D"> D) all of the above</label>
+ ```html
                 </div>
             </div>
             <div class="question">
@@ -282,7 +326,8 @@ print(a)</code></pre>
                 <div class="options">
                     <label><input type="radio" name="q21" value="A"> A) 1.5</label><br>
                     <label><input type="radio" name="q21" value="B"> B) 1</label><br>
-                    <label><input type="radio" name="q21" value="C"> C) 2</label><br>
+                    <label><input type=" ```html
+radio" name="q21" value="C"> C) 2</label><br>
                     <label><input type="radio" name="q21" value="D"> D) Error</label>
                 </div>
             </div>
@@ -312,7 +357,6 @@ print(a)</code></pre>
                     <label><input type="radio" name="q24" value="C"> C) def myFunc():</label><br>
                     <label><input type="radio" name="q24" value="D"> D) create myFunc():</label>
                 </div>
-            ```html
             </div>
             <div class="question">
                 <p>25. What is the output of <code>print("abc" * 3)</code>?</p>
@@ -344,6 +388,7 @@ print(a)</code></pre>
             <div class="question">
                 <p>28. Which of the following is a correct way to import a module in Python?</p>
                 <div class="options">
+ ```html
                     <label><input type="radio" name="q28" value="A"> A) import module_name</label><br>
                     <label><input type="radio" name="q28" value="B"> B) include module_name</label><br>
                     <label><input type="radio" name="q28" value="C"> C) require module_name</label><br>
@@ -372,11 +417,9 @@ print(a)</code></pre>
                 <p>31. What is the output of <code>print("Python"[-1])</code>?</p>
                 <div class="options">
                     <label><input type="radio" name="q31" value="A"> A) P</label><br>
-                    <label><input type="radio" name="q31" value=" ```html
-A) n</label><br>
                     <label><input type="radio" name="q31" value="B"> B) o</label><br>
                     <label><input type="radio" name="q31" value="C"> C) Error</label><br>
-                    <label><input type="radio" name="q31" value="D"> D) Python</label>
+                    <label><input type="radio" name="q31" value="D"> D) n</label>
                 </div>
             </div>
             <div class="question">
@@ -402,7 +445,8 @@ A) n</label><br>
                 <div class="options">
                     <label><input type="radio" name="q34" value="A"> A) venv</label><br>
                     <label><input type="radio" name="q34" value="B"> B) virtualenv</label><br>
-                    <label><input type="radio" name="q34" value="C"> C) pipenv</label><br>
+                    <label><input type="radio" name="q34" value="C"> C) pipenv ```html
+</label><br>
                     <label><input type="radio" name="q34" value="D"> D) All of the above</label>
                 </div>
             </div>
@@ -430,8 +474,7 @@ A) n</label><br>
                     <label><input type="radio" name="q37" value="A"> A) 1</label><br>
                     <label><input type="radio" name="q37" value="B"> B) 2</label><br>
                     <label><input type="radio" name="q37" value="C"> C) 0</label><br>
-                    <label><input type="radio" ```html
-name="q37" value="D"> D) Error</label>
+                    <label><input type="radio" name="q37" value="D"> D) Error</label>
                 </div>
             </div>
             <div class="question">
@@ -465,7 +508,29 @@ name="q37" value="D"> D) Error</label>
         </form>
         <div id="result"></div>
     </div>
+    <div class="popup" id="resultPopup">
+        <div class="popup-content">
+            <h2>Test Completed</h2>
+            <p id="finalScore"></p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
     <script>
+        let timeLeft = 2400; // 40 minutes in seconds
+        const timerElement = document.getElementById('time');
+
+        const timer = setInterval(() => {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            timerElement.innerText = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+            timeLeft--;
+
+            if (timeLeft < 0) {
+                clearInterval(timer);
+                calculateScore();
+            }
+        }, 1000);
+
         function calculateScore() {
             const answers = {
                 q1: 'C',
@@ -498,7 +563,7 @@ name="q37" value="D"> D) Error</label>
                 q28: 'A',
                 q29: 'B',
                 q30: 'C',
-                q31: 'A',
+                q31: 'D',
                 q32: 'A',
                 q33: 'A',
                 q34: 'D',
@@ -517,7 +582,27 @@ name="q37" value="D"> D) Error</label>
                     score++;
                 }
             }
-            document.getElementById('result').innerText = `Your score is ${score} out of ${Object.keys(answers).length}`;
+            document.getElementById('finalScore').innerText = `Your score is ${score} out of ${Object.keys(answers).length}`;
+            showPopup();
+            blockActivity();
+        }
+
+        function showPopup() {
+            document.getElementById('resultPopup').style.display = 'flex';
+        }
+
+        function closePopup() {
+            document.getElementById('resultPopup').style.display = 'none';
+        }
+
+        function blockActivity() {
+            const form = document.getElementById('mcqForm');
+            const submitButton = form.querySelector('button');
+            submitButton.disabled = true; // Disable the submit button
+            const inputs = form.querySelectorAll('input[type="radio"]');
+            inputs.forEach(input => {
+                input.disabled = true; // Disable all radio buttons
+            });
         }
     </script>
 </body>
